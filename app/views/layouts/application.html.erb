@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dejaf</title>
+    <title>Dejaf <%= yield(:title) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,16 +10,27 @@
 
   <body>
   	<header>
-  		
+      <% if !new_user_registration_path && !new_user_session_path  %>
+  		 <%= render '/layouts/main_nav'%>
+      <% end %>
   	</header>
   	<main>
 	  	<section class="message">
 	  		<p class="notice"><%= notice %></p>
-       		<p class="alert"><%= alert %></p>
+       	<p class="alert"><%= alert %></p>
 	  	</section>
   		<section class="main-section">
   			<%= yield %>
   		</section>
+      <% if !new_user_registration_path && !new_user_session_path  %>
+        <div class="fixed-action-btn" style="bottom: 3.3em; right: 0.2em;">
+          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+            <i class="material-icons">mode_edit</i>
+          </a>
+        </div>
+      <% end %>
+      
+      
   	</main>
     
   </body>
