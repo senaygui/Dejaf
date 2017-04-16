@@ -3,3 +3,7 @@ $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import 'materialize';
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+input[type=search]:not(.browser-default){
+	 border:1px solid green !important; 
+}

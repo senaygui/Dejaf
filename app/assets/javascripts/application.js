@@ -15,3 +15,10 @@
 //= require turbolinks
 //= require materialize-sprockets
 //= require_tree .
+
+
+
+$( document ).on('turbolinks:load', function(){
+	$(".button-collapse").sideNav();
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
+})
