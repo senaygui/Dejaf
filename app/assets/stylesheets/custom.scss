@@ -3,7 +3,10 @@ $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import 'materialize';
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+$font-url: 'http://fonts.useso.com/css?family=Lato:400,700,400italic,700italic&subset=latin';
+$font-family: 'custom-font-family';
+@import "semantic-ui";
 
-input[type=search]:not(.browser-default){
+/*input[type=search]:not(.browser-default){
 	 border:1px solid green !important; 
-}
+}*/
