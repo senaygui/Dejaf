@@ -28,7 +28,6 @@ gem 'materialize-sass', '~> 0.98.1'
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick', '~> 4.7'
-gem 'semantic-ui-sass', '~> 2.2', '>= 2.2.9.3'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
